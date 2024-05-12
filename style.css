@@ -1,3 +1,14 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
 *,
 *::before,
 *::after {
@@ -5,34 +16,71 @@
 }
 body{
     padding: 1rem;
-    background-color: hsl(30, 54%, 90%)
-}
-.container{
-    padding: 2.5rem;
-    max-width: 46rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 1.5rem;
-}
-h1{
-    color: hsl(24, 5%, 18%);
-}
-img{
-    width: auto;
-    height: 18.75rem;
-    border-radius: 0.75rem;
-}
-.inner-container{
-    padding: 1.75rem;
-    border-radius: 0.6rem;
-    background-color: hsl(330, 100%, 98%);
-}
-ul li{
-    margin-bottom: 1rem;
-}
-ol li{
-    margin-bottom: 1rem;
+    background-color: var(--eggshell);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 122.188rem;
 }
 hr{
     margin: 2rem 0rem 2rem 0rem;
     color: hsl(0, 0%, 83%);
+}
+.container{
+    padding: 2.5rem;
+    max-width: 46rem;
+    background-color: var(--white);
+    border-radius: 1.5rem;
+}
+.container img{
+    width: 100%;
+    height: 18.75rem;
+    border-radius: 0.75rem;
+}
+.recipe-heading{
+    color: var(--dark-charcoal);
+    font-family: "Young Serif", sans-serif;
+}
+.headings{
+    color: var(--nutmeg);
+    font-family: "Young Serif", sans-serif;
+}
+.recipe-description{
+    color: var(--wenge-brown);
+}
+.inner-container{
+    padding: 1.75rem;
+    border-radius: 0.6rem;
+    background-color: var(--rose-white);
+    margin: 2rem 0 2rem 0;
+}
+.inner-container h3{
+    color: var(--dark-raspberry)
+}
+ul li{
+    margin-bottom: 1rem;
+    color: var(--wenge-brown);
+}
+ol li{
+    margin-bottom: 1rem;
+    color: var(--wenge-brown);
+}
+.nutrition p{
+    color: var(--wenge-brown);
+    margin: 1.4rem 0 1.4rem 0;
+}
+.nutrition .row{
+    margin-top: .8rem;
+    padding-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.15);
+}
+.nutrition .col-2{
+    width: 50%;
+    color: var(--nutmeg);
+}
+.nutrition .col-1{
+    color: var(--wenge-brown);
 }
